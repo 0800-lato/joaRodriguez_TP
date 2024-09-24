@@ -2,6 +2,7 @@
 @import url("./variables.css");
 @import url("./general.css");
 @import url("./forms.css");
+@import url("./animation.css");
 
 /* HEADER*/
 .header {
@@ -10,6 +11,7 @@
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .header h2 {
@@ -32,6 +34,14 @@
 
 .nav--principal ul {
   list-style: none;
+}
+
+.nav--principal ul li:hover {
+  transition: all 0.5s ease;
+}
+
+.nav--principal ul li:hover {
+  font-size: 1.1rem;
 }
 
 /* SECTION--BANNER*/

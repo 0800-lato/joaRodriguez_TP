@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Freelance Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="/styles/styles.css" />
     <script
       src="https://kit.fontawesome.com/c65f2f1cc8.js"
@@ -42,7 +47,7 @@
         <!-- imagen de perfil -->
         <img src="/images/profile.png" alt="imagen de perfil" />
         <!-- nombre de perfil -->
-        <h1>freelance portfolio</h1>
+        <h1 class="animate__animated animate__shakeY">freelance portfolio</h1>
         <!-- adorno estrella -->
         <div class="box--star">
           <hr />
@@ -62,12 +67,36 @@
           <hr />
         </div>
         <div class="box-images--porfolio">
-          <img src="/images/cabin.png" alt="imagen de cabaña" />
-          <img src="/images/cake.png" alt="imagen de pastel" />
-          <img src="/images/circus.png" alt="imagen de circo" />
-          <img src="/images/game.png" alt="imagen de joystick" />
-          <img src="/images/safe.png" alt="imagen de caja fuerte" />
-          <img src="/images/submarine.png" alt="imagen de submarino" />
+          <img
+            data-aos="fade-right"
+            src="/images/cabin.png"
+            alt="imagen de cabaña"
+          />
+          <img
+            data-aos="fade-down"
+            src="/images/cake.png"
+            alt="imagen de pastel"
+          />
+          <img
+            data-aos="fade-left"
+            src="/images/circus.png"
+            alt="imagen de circo"
+          />
+          <img
+            data-aos="fade-right"
+            src="/images/game.png"
+            alt="imagen de joystick"
+          />
+          <img
+            data-aos="fade-up"
+            src="/images/safe.png"
+            alt="imagen de caja fuerte"
+          />
+          <img
+            data-aos="fade-left"
+            src="/images/submarine.png"
+            alt="imagen de submarino"
+          />
         </div>
       </section>
 
@@ -163,5 +192,9 @@
         </p>
       </article>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
